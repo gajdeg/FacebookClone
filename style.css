@@ -11,6 +11,7 @@ body {
     background: #f0f2f5;
     padding-top: 72px;
     padding-bottom: 112px; 
+    width: 100%;
 }
 .content {
     display: flex;
@@ -19,7 +20,7 @@ body {
     width: 50%;
 }
 
-/* ---------- LEFT CONTENT ---------- */
+/* --------------------------LEFT CONTENTS---------------------------- */
 .left-content {
    flex: 1;
 }
@@ -39,7 +40,7 @@ body {
     color: #333;
 }
 
-/* ------------RIGHT CONTENT--------- */
+/* --------------------------RIGHT CONTENT---------------------------- */
 .right-content {
     flex: 1;
 }
@@ -108,11 +109,11 @@ body {
     background: #d2d2d2;
 }
 
-.crt-new-ac {
+.new-acc {
     text-align: center;
 }
 
-.crt-new-ac > a {
+.new-acc > a {
     display: inline-block;
     background: #42b72a;
     border-radius: 6px;
@@ -124,17 +125,110 @@ body {
     margin: 20px 0 7px;
 }
 
-.crt-page {
+.create-page {
     text-align: center;
     color: black;
     padding: 20px 0;
 }
 
-.crt-page > a {
+.create-page > a {
     text-decoration: none;
     font-weight: 600;
     color: black;
 }
-.crt-page > a:hover {
+.create-page > a:hover {
     text-decoration: underline;
+}
+
+/* --------------------------FOOTER---------------------------- */
+.fb-footer{
+    width: 50%;
+    margin: auto;
+    color: #737373;
+}
+
+.fb-footer > ul {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.fb-footer > ul > li {
+    display: inline-block;
+    margin-right: 0 5px;
+}
+
+.fb-footer > ul > li > a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #737373;
+    line-height: 1.6;
+    padding-right: 20px;
+}
+.fb-footer > ul.languages > li > a {
+    padding-right: 5px;
+}
+
+.btn-add {
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    background-color: #f5f6f7;
+    border-color: #ccd0d5;
+    font-weight: bold;
+    justify-content: center;
+    padding: 0 8px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+}
+
+.btn-add:hover {
+    background-color: #e9ebec;
+}
+
+.meta {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* ------------------------ RESPONSIVE --------------------- */
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 20px 0;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+    }
+
+    .f-logo > img {
+        height: 49px;
+        margin: -28px;
+    }
+
+    .f-logo {
+        text-align: center;
+        margin: 40px 0 16px;
+    }
+
+    .fb-footer{
+        width: 80%;
+        margin: auto;
+        color: #737373;
+    }
+
+    .f-quote {
+       display: none;
+    }
+
+    .left-content {
+        flex: 1;
+    }
+    .right-content {
+        flex: 1;
+    }
 }
