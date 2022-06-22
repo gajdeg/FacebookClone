@@ -163,6 +163,11 @@ body {
     line-height: 1.6;
     padding-right: 20px;
 }
+
+.fb-footer > ul > li > a:hover {
+    text-decoration: underline;
+}
+
 .fb-footer > ul.languages > li > a {
     padding-right: 5px;
 }
